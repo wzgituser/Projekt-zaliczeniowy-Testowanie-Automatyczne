@@ -7,7 +7,7 @@
             "reportPageTitle": "My Test Suite",
             "embeddedScreenshots": true,
             "inlineAssets": true,
-            "reportFilename": "Search box test"
+            "reportFilename": "Set of the 10 tests"
             
         },
     "video": false    
