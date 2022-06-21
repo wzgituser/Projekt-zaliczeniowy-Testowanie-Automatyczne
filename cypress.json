@@ -1,6 +1,5 @@
 {
     "baseUrl" : "https://katalon-demo-cura.herokuapp.com",
-    "projectId": "7mq389",
     "reporter": "cypress-mochawesome-reporter",
         "reporterOptions": {
             "reportDir": "cypress/reports",
