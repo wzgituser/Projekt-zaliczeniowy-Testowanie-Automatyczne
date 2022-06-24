@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-24T15:42:51.099Z",
+    "end": "2022-06-24T15:42:59.208Z",
+    "duration": 8109,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3b578990-2df3-4681-a9c3-52ce50748d40",
+      "title": "",
+      "fullFile": "cypress/integration/katalon-demo/tc5DateInput.spec.js",
+      "file": "cypress/integration/katalon-demo/tc5DateInput.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5f484f4f-cc3f-4ff4-84e7-7a405dac5a63",
+          "title": "Test Case#5: Validation of the date input\"Visit Date (Required) at katalon-demo website\"",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "29314486-eb72-44f0-a1a4-c6f695483ca7",
+              "title": "Assertion data in date input \"Visit Date (Required)\"",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Validation of the date input, actions and assertions",
+                  "fullTitle": "Test Case#5: Validation of the date input\"Visit Date (Required) at katalon-demo website\" Assertion data in date input \"Visit Date (Required)\" Validation of the date input, actions and assertions",
+                  "timedOut": null,
+                  "duration": 7970,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.xpath('//*[@id=\"appointment\"]/div/div/form/div[4]/label').invoke('text').then(text => {\n  const textValue = text;\n  cy.xpath('//*[@id=\"appointment\"]/div/div/form/div[4]/label').should('have.text', textValue);\n});\ncy.get('@testData').then(data => {\n  console.log(typeof data);\n  console.log(data);\n  cy.xpath('//*[@id=\"txt_visit_date\"]').clear().type(data.date);\n  cy.xpath('//*[@id=\"txt_visit_date\"]').should('have.value', data.date);\n});\ncy.xpath('/html/body/div/div[1]/table').should('be.visible');\ncy.get('body > div > div.datepicker-days > table > tbody > tr:nth-child(2) > td.active.day').should('exist').and('be.visible');\ncy.xpath('//*[@id=\"txt_visit_date\"]').clear();\ncy.get('@testData').then(data => {\n  cy.xpath('//*[@id=\"txt_visit_date\"]').invoke('text').then(text => {\n    expect(text).to.not.eql(data.date);\n  });\n});",
+                  "err": {},
+                  "uuid": "bb7dc7e3-2505-4ebc-b9fb-ef277b3935cc",
+                  "parentUUID": "29314486-eb72-44f0-a1a4-c6f695483ca7",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "bb7dc7e3-2505-4ebc-b9fb-ef277b3935cc"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 7970,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "test in virtual machine",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "reportFilename": "test in virtual machine",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

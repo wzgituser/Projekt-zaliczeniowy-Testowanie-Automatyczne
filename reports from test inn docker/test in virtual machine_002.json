@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-24T15:42:27.237Z",
+    "end": "2022-06-24T15:42:33.768Z",
+    "duration": 6531,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "370c8dde-b270-468a-b0d8-aebf8caa60a1",
+      "title": "",
+      "fullFile": "cypress/integration/katalon-demo/tc3CheckBox.spec.js",
+      "file": "cypress/integration/katalon-demo/tc3CheckBox.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5954a272-0e47-4789-be07-85f6b5bdfca7",
+          "title": "Test Case #3:\"Apply for hospital readmission\" check box functional test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "08375d11-a0a2-42bf-80cb-d961f507ef31",
+              "title": "check box test",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "functional test of the check box element \"Apply for hospital readmission\"",
+                  "fullTitle": "Test Case #3:\"Apply for hospital readmission\" check box functional test check box test functional test of the check box element \"Apply for hospital readmission\"",
+                  "timedOut": null,
+                  "duration": 6298,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('#chk_hospotal_readmission').check().should('be.checked');\ncy.get('#chk_hospotal_readmission').uncheck().should('not.be.checked');",
+                  "err": {},
+                  "uuid": "dc64f688-5685-4c42-89a8-6e32598e25cf",
+                  "parentUUID": "08375d11-a0a2-42bf-80cb-d961f507ef31",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "dc64f688-5685-4c42-89a8-6e32598e25cf"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 6298,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "test in virtual machine",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "reportFilename": "test in virtual machine",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
