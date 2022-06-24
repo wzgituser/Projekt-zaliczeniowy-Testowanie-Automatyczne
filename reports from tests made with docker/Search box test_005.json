@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-24T14:54:17.865Z",
+    "end": "2022-06-24T14:54:30.087Z",
+    "duration": 12222,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "53681b06-3b99-4b4a-84e7-840e4930e5c0",
+      "title": "",
+      "fullFile": "cypress/integration/katalon-demo/tc6Textarea.spec.js",
+      "file": "cypress/integration/katalon-demo/tc6Textarea.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4fef6cf6-f722-4ee8-aa67-904c95046c7f",
+          "title": "Test Case#6: Validation of the \"Comment\" field at Katalon-demo\" website",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "dd87e66f-4f1e-429d-b93e-4b8bde04c5e3",
+              "title": "functional testing of the form elements",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "validation of the \"comment\" textarea ",
+                  "fullTitle": "Test Case#6: Validation of the \"Comment\" field at Katalon-demo\" website functional testing of the form elements validation of the \"comment\" textarea ",
+                  "timedOut": null,
+                  "duration": 11907,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.xpath('//*[@id=\"txt_visit_date\"]').clear().type(_KatalonFixture.default.date); // cy.xpath('//*[@id=\"txt_visit_date\"]')        \n//         .type({esc})\ncy.xpath('//*[@id=\"appointment\"]/div/div/form/div[5]/label').click();\ncy.xpath('//*[@id=\"appointment\"]/div/div/form/div[5]/label').invoke('text').then(text => {\n  const compareText = text;\n  cy.xpath('//*[@id=\"appointment\"]/div/div/form/div[5]/label').should('have.text', compareText);\n});\ncy.xpath('//*[@id=\"txt_comment\"]').clear().type(_KatalonFixture.default.stringValue);\ncy.xpath('//*[@id=\"txt_comment\"]').invoke('val').then(val => {\n  const textVal = val;\n  expect(textVal).to.eql(_KatalonFixture.default.stringValue);\n  expect(textVal).to.be.a('string');\n  expect(textVal).to.have.lengthOf(31);\n});\ncy.xpath('//*[@id=\"txt_comment\"]').clear().type(_KatalonFixture.default.intigerValue);\ncy.xpath('//*[@id=\"txt_comment\"]').invoke('val').then(val => {\n  const textVal = val;\n  expect(textVal).to.contain(_KatalonFixture.default.intigerValue);\n  expect(textVal).to.be.a('string');\n  expect(textVal).to.have.lengthOf(10);\n});\ncy.xpath('//*[@id=\"txt_comment\"]').clear();\ncy.xpath('//*[@id=\"txt_comment\"]').clear().type(_KatalonFixture.default.shiftPlusSigns);\ncy.xpath('//*[@id=\"txt_comment\"]').invoke('val').then(val => {\n  const textVal = val;\n  expect(textVal).to.contain(_KatalonFixture.default.shiftPlusSigns);\n  expect(textVal).to.be.a('string');\n});\ncy.xpath('//*[@id=\"txt_comment\"]').clear();",
+                  "err": {},
+                  "uuid": "6e3ff7df-06bc-4eba-8e4a-8d58c382c5ac",
+                  "parentUUID": "dd87e66f-4f1e-429d-b93e-4b8bde04c5e3",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "6e3ff7df-06bc-4eba-8e4a-8d58c382c5ac"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 11907,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "Search box test",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "reportFilename": "Search box test",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
